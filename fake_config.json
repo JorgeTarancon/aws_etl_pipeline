@@ -1,0 +1,27 @@
+{
+    "AWS_REGION": "us-east-1",
+    "SCHEMA_NAME": "covid_19",
+    "S3_STAGING_DIR": "s3://data-covid19-athena-output/output/",
+    "S3_BUCKET_NAME_TEMP_FILES": "data-covid19-athena-output",
+    "S3_BUCKET_NAME_OUTPUT": "bucket-covid-data-analysis",
+    "S3_OUTPUT_DIRECTORY": "output",
+    "TEMP_FILES_DIRECTORY": "temp_files/",
+
+    "NON_ADMINISTRATOR_USER": {
+        "ACCOUNT_ID": "account_id",
+        "USER": "user",
+        "PASSWORD": "password",
+        "ACCESS_KEY": "access_key",
+        "SECRET_KEY": "secret_key"
+    },
+
+    "REDSHIFT_ADMINISTRATOR_USER": {
+        "CLUSTER": "covid-19-data-cluster",
+        "DATABASE": "dev",
+        "USER": "user",
+        "PASSWORD": "password",
+        "ROLE":"aws_iam_role=arn:aws:iam::9173103101:role/redshift-s3-role",
+        "PORT": 5439
+    }
+
+}
